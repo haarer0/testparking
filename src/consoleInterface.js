@@ -39,7 +39,7 @@ const showHelp = () => {
 	console.log('%c window.parking.db.generateInitialData() | window.dgid()%c - generates initial data in localStorage', functionStyles, descriptionStyles);
 	console.log('%c window.parking.db.resetInitialData() | window.drid()%c - resets data in localStorage (and reloads the page).', functionStyles, descriptionStyles);
 	console.log('%c window.parking.db.showSavedData() | window.dssd()%c - shows actual information stored in localStorage\n', functionStyles, descriptionStyles);
-	console.log('%c window.parking.display.printParkingLayout(%cparkingId = 0%c) | windows.ppl(%cparkingId = 0)%c - displays specific parking layout in pseudographics.', functionStyles, argumentsStyles, functionStyles, argumentsStyles, functionStyles, descriptionStyles);
+	console.log('%c window.parking.display.printParkingLayout(%cparkingId = 0%c) | windows.ppl(%cparkingId = 0)%c - displays specific parking layout in pseudographics.', functionStyles, argumentsStyles, functionStyles, argumentsStyles, descriptionStyles);
 
 	console.log('%c window.parking.actions.arrive(%ccarType = \'s\', parkingId = 0%c) | windows.arrive(%c carType = \'s\', parkingId = 0%c)%c - simulates car (with specific carType from [\'s\', \'t\', \'d\']) arriving to parking. Once a parking place is found by the server, a new carId will be generated and assigned to the car', functionStyles, argumentsStyles, functionStyles, argumentsStyles, functionStyles, descriptionStyles);
 	console.log('%c window.parking.actions.depart(%ccarId, parkingId = 0%c) | windows.depart(%c carId, parkingId = 0%c)%c - simulates departing car (by its carId) from the parking', functionStyles, argumentsStyles, functionStyles, argumentsStyles, functionStyles, descriptionStyles);

@@ -22,19 +22,29 @@
     <title>React App</title>
   </head>
   <body>
+    <style>
+      .commands-list > li { margin-bottom: 20px; color: #888;}
+      .commands-list .command { font-weight: bold; font-size: 19px; color: #000;}
+    </style>
+
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <div>
+      <h1>Parking site test example</h1>
+      <p>Curently it can be accessed only via web console.</p>
+      <p>List of possible commands</p>
+      <ul class="commands-list">
+        <li><span class="command">window.parking.db.generateInitialData()</span> OR <span class="command">window.dgid()</span> - generates initial data in localStorage</li>
+        <li><span class="command">window.parking.db.resetInitialData()</span> OR <span class="command">window.drid()</span> - resets data in localStorage (and reloads the page).</li>
+        <li><span class="command">window.parking.db.showSavedData()</span> OR <span class="command">window.dssd()</span> - shows actual information stored in localStorage</li>
+
+        <li><span class="command">window.parking.display.printParkingLayout(parkingId = 0)</span> OR <span class="command">windows.ppl(parkingId = 0)</span> - displays specific parking layout in pseudographics</li>
+        <li><span class="command">window.parking.actions.arrive(carType = 's', parkingId = 0)</span> OR <span class="command">windows.arrive( carType = 's', parkingId = 0)</span> - simulates car (with specific carType from ['s', 't', 'd']) arriving to parking. Once a parking place is found by the server, a new carId will be generated and assigned to the car</li>
+        <li><span class="command">window.parking.actions.depart(carId, parkingId = 0)</span> OR <span class="command">windows.depart( carId, parkingId = 0)</span> - simulates departing car (by its carId) from the parking</li>
+      </ul>
+    </div>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
