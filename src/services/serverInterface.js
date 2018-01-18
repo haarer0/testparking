@@ -27,9 +27,9 @@ export const getDataFromDB = () => {
 
 	const data = {
 		parkings: generateParkingLayout({
-				normalPlaces: 3,
-				truckPlaces: 2,
-				disabledPlaces: 1
+				normalPlaces: 15,
+				truckPlaces: 10,
+				disabledPlaces: 5
 			}
 		)
 	}
