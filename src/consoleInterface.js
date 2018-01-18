@@ -63,7 +63,7 @@ const setConsoleInterface = () => {
 		},
 		actions: {
 			arrive: (carType = 's', parkingId = 0) => { store.dispatch(actionCarArrived(carType, parkingId)) },
-			depart: (carId, placeId, parkingId = 0) => { store.dispatch(actionCarDeparted(carId, placeId, parkingId)) }
+			depart: (carId, placeId, parkingId = 0) => { store.dispatch(actionCarDeparted(parseInt(carId), placeId, parkingId)) }
 		}
 	}
 
